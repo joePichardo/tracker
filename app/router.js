@@ -6,7 +6,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  // Parent route is a noun
   this.route('sightings', function() {
+    // Child route is verb or adjective
     this.route('new');
   });
   this.route('sighting', function() {
